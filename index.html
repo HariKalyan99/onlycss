@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <!-- this is an internal styling -->
+    <style>
+        h1, p {
+            color: rgb(255, 0, 43);
+            /* line-height: 200px; */
+
+        }
+        * {
+            color: aqua;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* text-shadow: rgb(10, 104, 228) 1px 10px 2px; */
+        }
+        #text2 {
+            background-color: #ff00ff;
+        }
+        #text2 p {
+            color: aquamarine;
+            background-color: firebrick;
+            visibility: hidden;
+        }
+
+        #icon {
+            height: 400px;
+            width: 400px;
+            /* background-image: url(png-transparent-bird-tweet-twitter-twitter-logo-social-media-icon.png);
+            
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #ff00ff; */
+            background: green url(png-transparent-bird-tweet-twitter-twitter-logo-social-media-icon.png) no-repeat center;
+            background-size: contain;
+        }
+
+        #htext {
+            text-decoration: line-through;
+            text-decoration-color: rgb(255, 251, 0);
+            text-decoration-style: wavy;
+        }
+
+
+        #transform1 {
+            text-transform: capitalize;
+            line-height: 200px;
+        }
+        #transform2 {
+            text-transform: uppercase;
+        }
+        #transform3 {
+            text-transform: lowercase;
+            line-height: 100px;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 id="text">Hello world</h1> <!-- this is an inline styling -->
+    <p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sapiente porro. Molestiae, alias culpa! Quis, incidunt iusto. Quasi aperiam laudantium tempore officiis est, explicabo iure vel illum consequatur modi harum.</p>
+
+
+    <div id="text2">
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quis natus sequi sint, et facilis eligendi, culpa impedit repellat corrupti ad libero architecto deserunt debitis, rerum rem assumenda voluptates cumque?</p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis dolores at tempora sunt architecto voluptatum debitis ipsa repellat iure, obcaecati natus tempore cum doloribus molestiae rerum! Mollitia, porro doloribus.
+            </p>
+            <span>OK</span>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div style="background-color: rgb(255, 255, 255);">first container</div>
+    <div style="background-color: rgb(0, 0, 0);">second container</div>
+    <div style="background-color: rgb(255, 0, 0); text-decoration: line-through; text-align: end; width: 200px;">third container</div>
+    <div style="background-color: rgb(0, 255, 0);">fourth container</div>
+    <div style="background-color: rgb(0, 0, 255); text-decoration: line-through;"><h1>fourth container</h1></div>
+    <div style="background-color: rgba(255, 0, 0,.25); text-decoration: dashed; text-decoration-color: aliceblue;"><h1>third container</h1></div>
+    <div style="background-color: rgba(0, 255, 0,.45);">fourth container</div>
+    <div style="background-color: rgba(0, 0, 255,0.5);">fourth container</div>
+    <div style="background-color: #ff00ff;">fifth container</div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <hr>
+    <div id="icon"></div>
+
+
+
+    <div >
+        <h1 id="htext">Hello</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h1 id="transform1">text transform</h1>
+        <h1 id="transform2">text transform</h1>
+        <h1 id="transform3">TEXT TRANSFORM</h1>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div style="font-size: 40px; font-style: italic;">
+        <h1>Font property</h1>
+    </div>
+    <div style="font-weight: 900; font-style: oblique">
+        <p>Font property</p>
+    </div>
+    <div style="font-weight: 900; font-style: oblique; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; line-height: 20px;">
+        <p>Font property Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea repudiandae ullam vel. Cumque nihil, mollitia dicta itaque ipsum nobis nesciunt, ratione, magni obcaecati ab praesentium recusandae modi rerum enim quisquam.</p>
+    </div>
+    <a href="index2.html">Click</a>
+</body>
+</html>
