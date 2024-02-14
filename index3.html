@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(19, 82, 61);
+            margin: 5px;
+            color: aliceblue;
+            display: block;
+        }
+        .box1 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(82, 78, 19);
+            margin: 5px;
+            color: aliceblue;
+            display: inline;
+        }
+        .box2 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(36, 19, 82);
+            margin: 5px;
+            color: aliceblue;
+            display: inline-block;
+        }
+
+        #box1 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>DISPLAY PROPERTY</h1>
+    
+    <div id="box1" class="box">BOX1 block</div>
+    <div id="box2" class="box">BOX2 block</div>
+    <div id="box3" class="box">BOX3 block</div>
+    <div id="box1" class="box2">BOX1 inline-block</div>
+    <div id="box2" class="box2">BOX2 inline-block</div>
+    <div id="box3" class="box2">BOX3 inline-block</div>
+    <div id="box1" class="box1">BOX1 inline</div>
+    <div id="box2" class="box1">BOX2 inline</div>
+    <div id="box3" class="box1">BOX3 inline</div>
+
+
+
+    <h1>
+        <a href="index4.html">Go to responsive page</a>
+    </h1>
+</body>
+</html>

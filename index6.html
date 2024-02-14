@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            height: 400px;
+            width: 500px;
+            background-color: aquamarine;
+        }
+        #div1 {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            float: inline-end;
+            margin: 10px;
+        }
+        #div2 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(236, 0, 0);
+            float: left;
+            margin: 10px;
+        }
+        .main{
+            height: 700px;
+            width: 700px;
+            /* width: 300px; for flex shrink  */
+            background-color: wheat;
+            border: 2px solid black;
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+            flex-shrink: 0;
+            /* align-items: center; */
+            /* align-content: start; */
+            flex-wrap: wrap;
+        }
+        #box1 {
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            border: 2px solid black;
+            flex-grow: 2;
+            order: 1;
+        }
+        #box2 {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(0, 255, 34);
+            border: 2px solid black;
+            /* flex-shrink: 0; */
+            order: 6;
+        }
+        #box3 {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(47, 0, 255);
+            border: 2px solid black;
+            order: 7;
+        }
+        #box4 {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(255, 0, 119);
+            border: 2px solid black;
+            /* align-self: center; */
+            order: 8;
+        }
+        #box5 {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(0, 255, 149);
+            border: 2px solid black;
+            order: 2;
+        }
+        #box6 {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(255, 174, 0);
+            border: 2px solid black;
+            flex-grow: 1;
+            order: 10;
+        }
+        #box7 {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(255, 0, 0);
+            border: 2px solid black;
+            order: 3;
+        }
+        #box8 {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(248, 248, 248);
+            border: 2px solid black;
+            order: 4;
+        }
+        #box9 {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(7, 36, 5);
+            border: 2px solid black;
+            order: 5;
+        }
+        #box10 {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(25, 4, 49);
+            border: 2px solid black;
+            flex-grow: 1;
+            order: 9 ;
+        }
+    </style>
+</head>
+<body>
+    <h1>FLOAT vs FLEX BOX</h1>
+
+    <div class="container">
+        <div id="div1"></div>
+        <div id="div2"></div>
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <div class="main">
+        <div id="box1">FLEX ITEM 1</div>
+        <div id="box2">FLEX ITEM 2</div>
+        <div id="box3">FLEX ITEM 3</div>
+        <div id="box4">FLEX ITEM 4</div>
+        <div id="box5">FLEX ITEM 5</div>
+        <div id="box6">FLEX ITEM 6</div>
+        <div id="box7">FLEX ITEM 7</div>
+        <div id="box8">FLEX ITEM 8</div>
+        <div id="box9">FLEX ITEM 9</div>
+        <div id="box10">FLEX ITEM 10</div>
+    </div>
+
+    <h1><a href="index7.html">next</a></h1>
+</body>
+</html>

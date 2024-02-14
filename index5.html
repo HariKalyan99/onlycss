@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 200vh;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 20px;
+            display: inline-block;
+            color: aliceblue;
+        }
+
+        #div1 {
+            position: static;
+        }
+
+        #div2 {
+            position: relative;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+        }
+        #div3 {
+            position: absolute;
+            top: 40px;
+            right: 200px;
+            z-index: 10;
+        }
+        #div4 {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: pink;
+        }
+        #div5 {
+            position: sticky;
+            top: 10px;
+            left: 10px;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Position</h1>
+    
+    <div id="div1">Static</div>
+    <div id="div2">Relative</div>
+    <div id="div3">Absolute</div>
+    <div id="div4">Sticky</div>
+    <div id="div5">Fixed</div>
+
+    <h1><a href="index6.html">Next page</a></h1>
+    
+</body>
+</html>
