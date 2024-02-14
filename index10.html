@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        button {
+            background-color: #005990;
+            border: 2px solid rgb(12, 10, 10);
+            border-radius: 10px;
+/* 
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: steps(5);
+            transition-delay: 0s; */
+
+
+            transition: all 0.5s steps(3) 0s;
+        }
+
+        button:hover {
+            background-color: aliceblue;
+            box-shadow: 5px 5px 10px 1px;
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: #005990;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 20px;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        #box1 {
+            background-color: #005990;
+        }
+        
+        #box2 {
+            background-color: #5eff00;
+        }
+
+        #box3 {
+            background-color: #730dad;
+        }
+
+        #box4 {
+            background-color: #901d00;
+        }
+
+        #box1:hover{
+            transform: rotate(90deg);
+            transition: all 0.5s ease-in-out 0s;
+        }
+
+
+        #box4:hover{
+            transform: scale(0.5);
+            transition: all 0.4s ease-in-out;
+        }
+        
+        #box2:hover{
+            transform: skew(90deg);
+            transition: all 0.4s ease-in-out;
+        }
+        
+        #box3:hover{
+            transform: translate(50px, 50px);
+            transition: all 0.4s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo classes</h1>
+
+    <button style="height: 50px; width: 100px;">CLICK ME</button>
+    <p>USED TO DEFINE STATES IN HTML ELEMENTS</p>
+
+
+    <pre>
+        
+        
+        
+        CSS TRANSFORM
+
+
+
+    </pre>
+
+    
+
+    <div id="box1" class="box">ROTATE</div>
+    <div id="box2" class="box">SKEW</div>
+    <div id="box3" class="box">TRANSLATE</div>
+    <div id="box4" class="box">SCALE</div>
+
+
+
+    <a href="index11.html">ANOTHER ONE</a>
+
+</body>
+</html>

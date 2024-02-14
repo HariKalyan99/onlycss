@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 20px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+
+
+            animation-name: towardsRight;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        #box1 {
+            background-color: #0f97ec;
+        }
+
+        #progress {
+            height: 30px;
+            width: 90%;
+            background-color: chocolate;
+            border: 2px solid black;
+            border-radius: 10px;
+            position: relative;
+            left: 5%;
+        }
+
+        #bar {
+            background-color: brown;
+            height: 100%;
+            border-radius: 10px;
+
+
+            animation: progressBar 3s;
+        }
+
+        @keyframes towardsRight {
+            /* from{
+                left: 10px;
+            }
+            to{
+                left: 200px;
+            } */
+
+            0% {
+                left: 100px;
+            }
+            50% {
+                top: 200px;
+            }
+            100%{
+                right: 100px;
+                position: relative;
+                z-index: 10;
+            }
+        }
+
+        @keyframes progressBar {
+            0% {
+                width: 0%;
+            }
+            50% {
+                width: 50%;
+            }
+            90%{
+                width: 20%;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>ANIMATION KEYFRAMES</h1>
+<br>
+<br>
+<br>
+    <div id="box1" class="box">ANIMATION</div>
+    <div id="progress">
+        <div id="bar"></div>
+    </div>
+</body>
+</html>
